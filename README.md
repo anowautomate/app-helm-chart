@@ -36,6 +36,7 @@ Settings for the ANOW application container image.
 | `global.postgresql.auth.secretKeys.userPasswordKey` | Name of key in existing secret to use for PostgreSQL credentials.  Only used when `global.postgresql.auth.existingSecret` is set | "password" |
 | `global.postgresql.service.ports.postgresql`        | PostgreSQL service port                                                                                                          | 5432       |
 | `global.postgresql.external.host`                   | Hostname or IP address of the external PostgreSQL server. Used when `postgresql.enabled` is set to `false`                       | ""         |
+
 ---
 
 ### Anow parameters
@@ -60,6 +61,7 @@ Configuration parameters for the ANOW application.
 | `anow.volumes.log`                | Persistent volume size for application logs                                                    | "10Gi"          |
 | `anow.service.port`               | Port on which the application service is exposed                                               | 8080            |
 | `anow.service.type`               | Kubernetes Service type                                                                        | "ClusterIP"     |
+
 ---
 
 ### PostgreSQL parameters
@@ -77,6 +79,7 @@ For a full list of configurable parameters and their descriptions, please refer 
 | `postgresql.primary.resources.limits.memory`   | Maximum memory the container is allowed to use                                                                        | ""    |
 | `postgresql.primary.resources.limits.cpu`      | Maximum CPU the container is allowed to use                                                                           | ""    |
 | `postgresql.primary.persistence.size`          | PVC Storage Request for PostgreSQL volume                                                                             | ""    |
+
 ---
 
 ### RAbbitMQ parameters
@@ -102,6 +105,7 @@ For a full list of configurable parameters and their descriptions, please refer 
 | `rabbitmq.resources.limits.memory`    | Maximum memory the container is allowed to use                                                                   | ""                         |
 | `rabbitmq.service.type`               | Kubernetes Service type                                                                                          | "ClusterIP"                |
 | `rabbitmq.service.portEnabled`        | Amqp port. Cannot be disabled when `rabbitmq.auth.tls.enabled` is `false`                                        | true                       |
+
 ---
 
 ## Install
