@@ -1,0 +1,22 @@
+apiVersion: v1
+entries:
+  anow-app:
+  - apiVersion: v2
+    created: "2025-09-30T18:17:15.6817862+02:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.5.38
+    - condition: rabbitmq.enabled
+      name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.7.0
+    description: A Helm chart for deploying ANOW application to Kubernetes
+    digest: 5e5c9348c8606c89afb68317fa6efc849636e478b8c2746056c0b070d3efd20a
+    name: anow-app
+    type: application
+    urls:
+    - anow-app-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-09-30T18:17:15.651539+02:00"
